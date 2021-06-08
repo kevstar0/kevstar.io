@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SIGN UP</title>
+    <style>
+      .form-layout {
+        align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="signup-check.php" method="post">
+      <h2 align="center">SIGN UP</h2>
+      <section class="form-layout">
+        <label>Enter First Name</label>
+        <input type="text" name="name" placeholder="Name" value="" /><br />
+
+        <label>Enter Surname</label>
+        <input type="text" name="name" placeholder="Surname" value="" /><br />
+
+        <label> Create User Name</label>
+        <input
+          type="text"
+          name="uname"
+          placeholder="User Name"
+          value=""
+        /><br />
+
+        <label>Create Password</label>
+        <input type="password" name="password" placeholder="Password" /><br />
+
+        <label>Re Password</label>
+        <input
+          type="password"
+          name="re_password"
+          placeholder="Re_Password"
+        /><br />
+      </section>
+
+      <button type="submit">Sign Up</button>
+      <a href="loginpage.html" class="ca">Already have an account?</a>
+    </form>
+  </body>
+</html>
