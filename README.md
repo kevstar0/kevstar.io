@@ -1,2 +1,2 @@
-# kevstar0.github.io
+# kevstar0.io
 About Kevin and his beloved AI
