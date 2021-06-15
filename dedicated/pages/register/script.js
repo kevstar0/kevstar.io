@@ -70,7 +70,7 @@ $(document).ready(function() {
             contact_no: {
                 validators: {
                   stringLength: {
-                        min: 12, 
+                        min: 8, 
                         max: 12,
                     notEmpty: {
                         message: 'Please enter your Contact No.'
@@ -80,7 +80,7 @@ $(document).ready(function() {
 			 department: {
                 validators: {
                     notEmpty: {
-                        message: 'Please select your Department/Office'
+                        message: 'Please select your country'
                     }
                 }
             },
@@ -88,7 +88,7 @@ $(document).ready(function() {
             }
         })
         .on('success.form.bv', function(e) {
-            $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+            $('I am here for you, Welcome home').slideDown({ opacity: "show" }, "slow") // Do something ...
                 $('#contact_form').data('bootstrapValidator').resetForm();
 
             // Prevent form submission
