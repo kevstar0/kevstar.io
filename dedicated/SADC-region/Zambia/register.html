@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head -->
+  <head>
+    <title>Register</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./pages/images/logo.png" />
+    <meta name="keywords" content="Smart ecosystem register" />
+    <!-- Jquery -->
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="./Javascripts/jquery-1.9.1.min.js"
+      defer=""
+    ></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TJVFF9B");
+    </script>
+    <!-- End Google Tag Manager & head -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TJVFF9B"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <% import firebase_admin from firebase_admin import credentials cred =
+    credentials.Certificate("./Javascripts/aqueous-encoder-301807-firebase-adminsdk-yz1mh-f5d0fa983b.json")
+    firebase_admin.initialize_app(cred) %> 
+    
+<!-- added firebased admin access -->
+    <script { FileInputStream
+    serviceAccount = new FileInputStream("path/to/serviceAccountKey.json");
+    FirebaseOptions options = new FirebaseOptions.Builder()
+    .setCredentials(GoogleCredentials.fromStream(serviceAccount)) .build();
+    FirebaseApp.initializeApp(options); }
+
+    <section class="admin access"></section>
+
+    <!-- firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.6.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.6.7/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+  </body>
+</html>
