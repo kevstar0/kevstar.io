@@ -12,6 +12,35 @@
       type="text/css"
       href="./login/vendor/bootstrap/css/bootstrap.min.css"
     />
+    <script>
+      $(function () {
+        var people = [];
+
+        $.getJSON(
+          "./login/client_secret_1012545270359-4hjo0u3ipf9iq1evjr84p4422s26eghq.apps.googleusercontent.com.json",
+          function (data) {
+            $.each(data.person, function (i, f) {
+              var tblRow =
+                "<tr>" +
+                "<td>" +
+                f.firstName +
+                "</td>" +
+                "<td>" +
+                f.lastName +
+                "</td>" +
+                "<td>" +
+                f.job +
+                "</td>" +
+                "<td>" +
+                f.roll +
+                "</td>" +
+                "</tr>";
+              $(tblRow).appendTo("#userdata tbody");
+            });
+          }
+        );
+      });
+    </script>
     <!--===============================================================================================-->
     <link
       rel="stylesheet"
@@ -71,7 +100,9 @@
               <i class="zmdi zmdi-landscape"></i>
             </span>
 
-            <span class="login100-form-title p-b-34 p-t-27"> Log in </span>
+            <span class="login100-form-title p-b-34 p-t-27">
+              Log in with Google account</span
+            >
 
             <div
               class="wrap-input100 validate-input"
@@ -111,6 +142,10 @@
 
             <div class="container-login100-form-btn">
               <button class="login100-form-btn">Login</button>
+            </div>
+
+            <div class="container-login100-form-btn">
+              <button class="login100-form-btn">Register</button>
             </div>
 
             <div class="text-center p-t-90">

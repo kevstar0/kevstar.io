@@ -43,12 +43,12 @@
     <!-- End Google Tag Manager (noscript) -->
     <% import firebase_admin from firebase_admin import credentials cred =
     credentials.Certificate("./Javascripts/aqueous-encoder-301807-firebase-adminsdk-yz1mh-f5d0fa983b.json")
-    firebase_admin.initialize_app(cred) %> 
-    
-<!-- added firebased admin access -->
-    <script { FileInputStream
-    serviceAccount = new FileInputStream("path/to/serviceAccountKey.json");
-    FirebaseOptions options = new FirebaseOptions.Builder()
+    firebase_admin.initialize_app(cred) %>
+
+    <!-- added firebased admin access -->
+    <script { FileInputStream serviceAccount = new
+    FileInputStream("path/to/serviceAccountKey.json"); FirebaseOptions options =
+    new FirebaseOptions.Builder()
     .setCredentials(GoogleCredentials.fromStream(serviceAccount)) .build();
     FirebaseApp.initializeApp(options); }
 
@@ -64,5 +64,31 @@
 
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
+    <script>
+      $(function () {
+        var people = [];
+
+        $.getJSON("people.json", function (data) {
+          $.each(data.person, function (i, f) {
+            var tblRow =
+              "<tr>" +
+              "<td>" +
+              f.firstName +
+              "</td>" +
+              "<td>" +
+              f.lastName +
+              "</td>" +
+              "<td>" +
+              f.job +
+              "</td>" +
+              "<td>" +
+              f.roll +
+              "</td>" +
+              "</tr>";
+            $(tblRow).appendTo("#userdata tbody");
+          });
+        });
+      });
+    </script>
   </body>
 </html>
