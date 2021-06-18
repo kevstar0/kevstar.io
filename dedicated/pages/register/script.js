@@ -30,7 +30,7 @@ $(document).ready(function() {
 			 user_name: {
                 validators: {
                      stringLength: {
-                        min: 8,
+                        min: 4,
                     },
                     notEmpty: {
                         message: 'Please enter your Username'
