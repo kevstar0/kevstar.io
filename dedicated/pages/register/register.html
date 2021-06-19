@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Registration Form With Html & Css</title>
+
+    <link rel="stylesheet" href="./reg.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div>
+        <form id="registrationform">
+                  <h3 class="text-warning text-center pt-5">Register into <a href="https://kevstar0.github.io/dedicated/Home">Mother</a></h3>
+                  <div class="alert">Account created successfully, Welcome</div>
+                  <!--profile selector here-->
+                  <label>
+                    <input type="text" class="input" name="email" placeholder="Email" id="email" required/><div class="line-box">
+                      <div class="line"></div>
+                    </div>
+                  </label>
+
+                  <label>
+                    <input type="text" class="input" name="name" placeholder="Name" id="name" required/><div class="line-box">
+                      <div class="line"></div>
+                    </div>
+                  </label>
+
+                  <label>
+                    <input type="text" class="input" name="surname" placeholder="Surname" id="surname" required/><div class="line-box">
+                      <div class="line"></div>
+                    </div>
+                  </label>
+
+                  <label for="Country of origin">Choose a country</label>
+
+                  <select name="Botswana" id="bw">
+                  <option value="">Please choose an option</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="Namibia">Namibia</option>
+                  <option value="Zimbabwe">Zimbabwe</option>
+                  <option value="Democratic Replublic of Congo">Democratic Replubic of Congo</option>
+                  <option value="Zambia">Zambia</option>
+                  <option value="goldfish">Goldfish</option>
+                  </select>
+
+                  <!-- gender selector here -->
+
+                  <label>
+                    <input type="number" class="input" name="phone" placeholder="Phone" id="number"/><div class="line-box">
+                      <div class="line"></div>
+                    </div>
+                  </label>
+
+                  <label>
+                    <input type="number" class="input" name="DOB" placeholder="Date of birth" id="dob"/><div class="line-box">
+                      <div class="line"></div>
+                    </div>
+                  </label>
+
+                  <label>
+                    <input
+                          id="username"
+                           type="text"
+                           class="input" 
+                           name="username"
+                           placeholder="Create a username" required/>
+                    <div class="line-box">
+                      <div class="line"></div>
+                    </div>
+                  </label>     
+
+                  <label>
+                    <input
+                           type="password"
+                           id="passwrd"
+                           class="input"
+                           name="password"
+                           placeholder="Password" required/>
+                    <div class="line-box">
+                      <div class="line"></div>
+                    </div>
+                  </label>
+
+                  <label>
+                    <input
+                           type="password"
+                           id="verpasswrd"
+                           class="input"
+                           name="passwordconfirm"
+                           placeholder="Confirm password" required/>
+                    <div class="line-box">
+                      <br>
+                      <p><em><strong>DO NOT forget your password use a password manager/ write it down for safe keeping. failure to do so will penalize you with either account suspension or a fine of P50 if you ever forget it</strong></em></p>
+                      <div class="line"></div>
+                    </di>
+                  </label>
+                  <!-- checkbox for terms and conditions-->
+                  <input type="checkbox" required/>Accept <a href="../Policy.html">terms & conditions</a>
+                  </div>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <button type="submit">Create account</button>
+                  <button a href="../login.html">Login</a></button>
+                </form>       
+            </div>
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+            <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+            <script src="./main.js"></script>
+          </body>
+          </html>
