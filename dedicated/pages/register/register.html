@@ -19,55 +19,68 @@
                   <div class="alert">Account created successfully, Welcome</div>
                   <!--profile selector here-->
                   <label>
-                    <input type="text" class="input" name="email" placeholder="Email" id="email" required/><div class="line-box">
+                    <input type="text" class="input" name="email" placeholder="Email" id="Email" required/><div class="line-box">
                       <div class="line"></div>
                     </div>
                   </label>
 
                   <label>
-                    <input type="text" class="input" name="name" placeholder="Name" id="name" required/><div class="line-box">
+                    <input type="text" class="input" name="name" placeholder="Name" id="Name" required/><div class="line-box">
                       <div class="line"></div>
                     </div>
                   </label>
 
                   <label>
-                    <input type="text" class="input" name="surname" placeholder="Surname" id="surname" required/><div class="line-box">
+                    <input type="text" class="input" name="surname" placeholder="Surname" id="Surname" required/><div class="line-box">
                       <div class="line"></div>
                     </div>
                   </label>
+                  
+                  <!--country selector-->
+                  <div>
+                    <label for="country">Country</label>
+                    <select id="Country" name="country" required>
+                      <option disabled hidden selected>Select</option>
+                        <option value="Botswana">Botswana</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="Angola">Angola</option>
+                        <option value="Angola">Angola</option>
+                        <option value="Lesotho">Lesotho</option>
+                        <option value="Eswatini">Eswatini</option>
+                        <option value="Mozambique">Mozambique</option>
+                        <option value="Malawi">Malawi</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Namibia">Namibia</option>
+                        <option value="Zimbabwe">Zimbabwe</option>
+                        <option value="Democratic Replublic of Congo">Democratic Replublic of Congo</option>
+                        <option value="Zambia">Zambia</option>
+                    </select>
+                    </div>
 
-                  <label for="Country of origin">Choose a country</label>
+                  <label for="Gender">Gender</label>
 
-                  <select name="Botswana" id="bw">
+                  <select id="Gender" name="Gender" required>
                   <option value="">Please choose an option</option>
-                  <option value="South Africa">South Africa</option>
-                  <option value="Namibia">Namibia</option>
-                  <option value="Zimbabwe">Zimbabwe</option>
-                  <option value="Democratic Replublic of Congo">Democratic Replubic of Congo</option>
-                  <option value="Zambia">Zambia</option>
-                  <option value="goldfish">Goldfish</option>
-                  </select>
-
-                  <!-- gender selector here -->
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="undefined">Rather not mention</option>
+                </select>
 
                   <label>
-                    <input type="number" class="input" name="phone" placeholder="Phone" id="number"/><div class="line-box">
+                    <input type="number" class="input" name="phone" placeholder="Phone" id="Number"/><div class="line-box">
                       <div class="line"></div>
                     </div>
                   </label>
 
-                  <label>
-                    <input type="number" class="input" name="DOB" placeholder="Date of birth" id="dob"/><div class="line-box">
-                      <div class="line"></div>
-                    </div>
-                  </label>
+                  <label for="birthday">Birthday:</label>
+                  <input type="date" id="Birthday" name="birthday"> 
 
                   <label>
                     <input
-                          id="username"
+                          id="Username"
                            type="text"
                            class="input" 
-                           name="username"
+                           name="Username"
                            placeholder="Create a username" required/>
                     <div class="line-box">
                       <div class="line"></div>
@@ -77,7 +90,7 @@
                   <label>
                     <input
                            type="password"
-                           id="passwrd"
+                           id="Passwrd"
                            class="input"
                            name="password"
                            placeholder="Password" required/>
@@ -89,7 +102,7 @@
                   <label>
                     <input
                            type="password"
-                           id="verpasswrd"
+                           id="Verpasswrd"
                            class="input"
                            name="passwordconfirm"
                            placeholder="Confirm password" required/>
@@ -100,7 +113,7 @@
                     </di>
                   </label>
                   <!-- checkbox for terms and conditions-->
-                  <input type="checkbox" required/>Accept <a href="../Policy.html">terms & conditions</a>
+                  <input type="checkbox" id="checkbx" required/>Accept <a href="../Policy.html">terms & conditions</a>
                   </div>
                   <br>
                   <br>

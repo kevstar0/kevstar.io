@@ -25,25 +25,29 @@ function submitForm(e){
     e.preventDefault();
 
     // get values
-    var name = getInputVal('name');
-    var surname = getInputVal('surname');
-    var email = getInputVal('email');
-    var dob = getInputVal('dob');
-    var number = getInputVal('number');
-    var country = getInputVal('country');
-    var password = getInputVal('verpasswrd');
-    var username = getInputVal('username');
+    var Email = getInputVal('Email');
+    var Name = getInputVal('Name');
+    var Surname = getInputVal('Surname');
+    var Country = getInputVal('Country');
+    var Gender = getInputVal('Gender');
+    var Number = getInputVal('Number');
+    var Birthday = getInputVal('Birthday');
+    var Passwrd = getInputVal('Verpasswrd');
+    var Username = getInputVal('Username');
 
     // save message
-    saveMessage(name, surname, email, number, country, passwrd, username, dob);
+    saveMessage(Email, Name, Number, Surname, Country, Gender, Verpasswrd, Passwrd, Username, Birthday);
 
     // show alert
     document.querySelector('.alert').style.display = 'block';
 
-    // hide alert after 3s
+    // hide alert after 5s
     setTimeout(function(){
         document.querySelector('.alert').style.display = 'none';
     },5000);
+
+    // clear form
+    document.getElementById('registrationform').reset();
 
 }
 
@@ -53,16 +57,19 @@ function getInputVal(id){
 }
 
 // save message to firebase
-function saveMessage(name, surname, email, number, country, verpasswrd, username, dob) {
+function saveMessage(Email, Name, Number, Surname, Country, Gender, Verpasswrd, Passwrd, Username, Birthday) {
     var newMessageRef = messagesRef.push();
     newMessageRef.set({
-        name: name,
-        surname: surname,
-        username: username,
-        email: email,
-        number: number,
-        country: country,
-        passwrd: passwrd,
-        dob: dob,
+        
+        Email: Email,
+        Name: Name,
+        Number: Number,        
+        Surname: Surname,
+        Country: Country,
+        Gender: Gender,
+        Verpasswrd: Verpasswrd,
+        Passwrd: Passwrd,
+        Username: Username,
+        Birthday: Birthday,
     })
 }

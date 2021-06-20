@@ -10,7 +10,7 @@ form {
   text-align: center;
   -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
-  height: 890px;
+  height: 895px;
 }
 .alert {
   text-align: center;
@@ -76,7 +76,7 @@ button {
   border-radius: 3px;
   cursor: pointer;
   transition: ease 0.3s;
-  height: 35px;
+  height: 37px;
 }
 
 button:hover {
