@@ -20,6 +20,9 @@ var messagesRef = firebase.database().ref('messages')
 //listen for form submit
 document.getElementById('registrationform').addEventListener('submit', submitForm);
 
+//listen for form login
+document.getElementById('loginform').addEventListener('submit', submitForm);
+
 // submit form
 function submitForm(e){
     e.preventDefault();
