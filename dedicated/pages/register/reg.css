@@ -10,7 +10,7 @@ form {
   text-align: center;
   -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
-  height: 895px;
+  height: 1000px;
 }
 .alert {
   text-align: center;
@@ -82,4 +82,37 @@ button {
 button:hover {
   background: #8bc34a;
   color: #ffffff;
+  align-content: flex-end;
+}
+.float {
+  position: fixed;
+  width: 90px;
+  height: 50px;
+  bottom: 40px;
+  right: 40px;
+  color: rgb(17, 0, 255);
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.my-float {
+  margin-top: 22px;
+}
+.float2 {
+  position: fixed;
+  width: 90px;
+  height: 50px;
+  bottom: 40px;
+  left: 40px;
+  color: rgb(25, 0, 255);
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.my-float2 {
+  margin-top: 22px;
+}
+Ptxt {
+  width: 50%;
+  height: 15%;
 }

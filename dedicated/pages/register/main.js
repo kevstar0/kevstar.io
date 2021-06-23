@@ -37,9 +37,11 @@ function submitForm(e){
     var Birthday = getInputVal('Birthday');
     var Passwrd = getInputVal('Verpasswrd');
     var Username = getInputVal('Username');
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 
     // save message
-    saveMessage(Email, Name, Number, Surname, Country, Gender, Verpasswrd, Passwrd, Username, Birthday);
+    saveMessage(Email, Name, Number, Surname, Country, Gender, Verpasswrd, Passwrd, Username, Birthday, date);
 
     // show alert
     document.querySelector('.alert').style.display = 'block';
@@ -60,7 +62,7 @@ function getInputVal(id){
 }
 
 // save message to firebase
-function saveMessage(Email, Name, Number, Surname, Country, Gender, Verpasswrd, Passwrd, Username, Birthday) {
+function saveMessage(Email, Name, Number, Surname, Country, Gender, Verpasswrd, Passwrd, Username, Birthday, date) {
     var newMessageRef = messagesRef.push();
     newMessageRef.set({
         
@@ -74,5 +76,6 @@ function saveMessage(Email, Name, Number, Surname, Country, Gender, Verpasswrd, 
         Passwrd: Passwrd,
         Username: Username,
         Birthday: Birthday,
+        Date: date,
     })
 }
