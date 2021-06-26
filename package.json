@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "@teachablemachine/image": "^0.8.4"
+  },
+  "name": "facialrecog",
+  "description": "About Kevin and his beloved AI\r <p><a href=\"https://kevstar0.io/About.html\"/></p>",
+  "version": "1.0.0",
+  "main": "package.json",
+  "devDependencies": {},
+  "scripts": {
+    "test": "kevstar run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevstar0/kevstar0.github.io.git"
+  },
+  "keywords": [
+    "face",
+    "recognition"
+  ],
+  "author": "kevin",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/kevstar0/kevstar0.github.io/issues"
+  },
+  "homepage": "https://github.com/kevstar0/kevstar0.github.io#readme"
+}
