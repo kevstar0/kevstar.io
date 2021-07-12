@@ -3,10 +3,9 @@
     "@teachablemachine/image": "^0.8.4"
   },
   "name": "facialrecog",
-  "description": "About Kevin and his beloved AI\r <p><a href=\"https://kevstar0.io/About.html\"/></p>",
+  "description": "About Kevin and his beloved AI\r <p><a href=\"https://kevstar0.io/dedicated/admin-panel.html\"/></p>",
   "version": "1.0.0",
   "main": "package.json",
-  "devDependencies": {},
   "scripts": {
     "test": "kevstar run"
   },
