@@ -452,8 +452,8 @@ body.loaded #preloader {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background: #fff;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgb(238, 189, 29);
+  background: rgba(238, 160, 43, 0.95);
   z-index: 99;
 }
 .screenshots-slider .overlay > .view-btn {
