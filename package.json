@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "name": "sky",
+  "version": "1.0.0",
+  "description": "the youth is rising",
+  "main": "Home.html",
+  "devDependencies": {},
+  "scripts": {
+    "test": "https://kevstar0.github.io/Home"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevstar0/kevstar0.github.io.git"
+  },
+  "keywords": [
+    "smart",
+    "home",
+    "gadgets"
+  ],
+  "author": "Kevin Manda",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/kevstar0/kevstar0.github.io/issues"
+  },
+  "homepage": "https://github.com/kevstar0/kevstar0.github.io#readme"
+}
