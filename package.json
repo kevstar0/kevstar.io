@@ -1,12 +1,13 @@
 {
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "firebase": "^8.7.1",
+    "firebaseui": "^4.8.1"
   },
   "name": "sky",
   "version": "1.0.0",
   "description": "the youth is rising",
   "main": "Home.html",
-  "devDependencies": {},
   "scripts": {
     "test": "https://kevstar0.github.io/Home"
   },
