@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coder's path <!--firebase with node support--></title>
+    <title>Coder's life choices</title>
     <script src="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.js"></script>
     <script src="./package.json"></script>
     <link
@@ -14,12 +15,35 @@
     />
     <link type="text/css" rel="stylesheet" href="./styles/styles.css" />
   </head>
-  <body>
-    <!---end user access section-->
-    <section id="Access-portal">
-      <h1>HELLO KEVIN</h1>
-      <p>what do you want to do?</p>
-    </section>
-    <div></div>
+  <body id="Access-portal">
+    <div align="center" id="user">
+    <h1>HELLO KEVIN</h1>
+    <p>what do you want to do?</p>
+    <p>I want some 5G</p>
+    </div>
+    <div>
+      <div align="center" id="auth-handler">
+        <input type="email" required id="email">
+        <input type="password" required id="passwrd">
+        <br>
+        <section>
+        <input type="checkbox" required><p>I am above 18 years of age</p>
+        </section>
+        <p>create <a href="register.html"/>new account</p>
+        <button id="login-btn">
+          <script src="node_modules/firebaseui/package.json"></script>
+          Login
+        </button>
+      </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.7.1/firebase-app.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="/__/firebase/8.7.1/firebase-analytics.js"></script>
+
+      <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
   </body>
 </html>
