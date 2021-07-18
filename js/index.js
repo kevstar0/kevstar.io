@@ -15,24 +15,21 @@ var firebaseConfig = {
   firebase.auth.Auth.Persistence.LOCAL
 
 
-  $("#login-btn").click(function()
-  {
-      var email = $("#email").val();
-      var passwrd = $("#passwrd").val();
+  firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
+  .then(() => {
+    // Existing and future Auth states are now persisted in the current
+    // session only. Closing the window would clear any existing state even
+    // if a user forgets to sign out.
+    // ...
+    // New sign-in will be persisted with session persistence.
+    return firebase.auth().signInWithEmailAndPassword(email, password);
+  })
+  .catch((error) => {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
 
-      if (email ! = "" && passwrd ! = "";
-      {
-          var result = firebase.auth().signInWithEmailAndPassword( email, password);
-
-          result.catch(function (error) {
-              var errorCode = error.code;
-              var errorMessage = error.message;
-              
-              console.log(errorCode);
-              console.log(erroMessage);
-              window.alert("message: "). errorMessage);
-      }
-      else {
-          window.alert("Form is incomplete, please fill out all fields")
-      }
+    console.log(errorCode);
+    console.log(errorMessage);
+    window.alert("Message: " errorMessage);
   });
