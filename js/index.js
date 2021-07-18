@@ -12,15 +12,25 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
+  firebase.auth.Auth.Persistence.LOCAL
+
 
   $("#login-btn").click(function()
   {
       var email = $("#email").val();
       var passwrd = $("#passwrd").val();
 
-      if (email ! = "" && passwrd ! = "");
+      if (email ! = "" && passwrd ! = "";
       {
-          var result = firebase.auth().signInWithEmailAndPassword()
+          var result = firebase.auth().signInWithEmailAndPassword( email, password);
+
+          result.catch(function (error) {
+              var errorCode = error.code;
+              var errorMessage = error.message;
+              
+              console.log(errorCode);
+              console.log(erroMessage);
+              window.alert("message: "). errorMessage);
       }
       else {
           window.alert("Form is incomplete, please fill out all fields")
