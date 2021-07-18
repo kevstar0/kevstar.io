@@ -30,6 +30,8 @@ function login(){
 
   firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
     // Handle Errors here.
+    var admin = require("firebase-admin");
+    var serviceAccount = require("./styles/aqueous-encoder-301807-firebase-adminsdk-yz1mh-bec158b445.json");
     var errorCode = error.code;
     var errorMessage = error.message;
 
@@ -43,3 +45,10 @@ function login(){
 function logout(){
   firebase.auth().signOut();
 }
+
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://aqueous-encoder-301807-default-rtdb.firebaseio.com"
+});
+
