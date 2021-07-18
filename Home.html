@@ -1,46 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coder's life choices</title>
-    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.js"></script>
-    <link type="text/css" rel="stylesheet" href="./styles/styles.css" />
-  </head>
-  <body id="Access-portal">
-    <div align="center" id="user">
-    <h1>Welcome to the Orange 5G beta channel</h1>
-    <p>what do you want to do?</p>
-    <p>You want some 5G?... login</p>
-    </div>
-    <div>
-      <div align="center">
-        <input type="email" required id="email">
-        <input type="password" required id="passwrd">
-        <br>
-        <section>
-        <input type="checkbox" required><p>I am above 18 years of age</p>
-        </section>
-        <p> OR create a <a href="register.html">new account</a></p>
-        <button id="login-btn">
-          Login
-        </button><script src="./js/index.js"></script>
-      </div>
-    </div>
-    <script src="js/index.js"></script>
-    <script>
-      firebase.auth().onAuthStateChanged(function(user)
-      {
-        if(user) {
-          window.location.href = "subscriptions.html"
-        }
-      });
-    </script>
-  </body>
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Mobile fly Web login Example</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Mobile Fly. You have successfully logged in!.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyA6XmqP76EBAG1XHZhtbJn6lDDagYH14xI",
+      authDomain: "aqueous-encoder-301807.firebaseapp.com",
+      databaseURL: "https://aqueous-encoder-301807-default-rtdb.firebaseio.com",
+      projectId: "aqueous-encoder-301807",
+      storageBucket: "aqueous-encoder-301807.appspot.com",
+      messagingSenderId: "1012545270359"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="index.js"></script>
+
+</body>
 </html>
