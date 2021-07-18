@@ -1,20 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Mobile Fly</title>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h3>We specialize in goods and service delivery optimizations both at homes & businesses from small to large</h3>
-        <p>
-            <li><input type="name" placeholder="Name"></li>
-            <li><input type="email" placeholder="Email"></li>
-            <li><input type="tel" placeholder="Phone number"></li>
-            <li><input type="date" placeholder="Birthday"></li>
-            <li><input type="checkbox"><p>I accept terms of usage</p></li>
-        </p>
+
+  <div id="login_div" class="main-div">
+    <h3>Log into Mobile Fly</h3>
+    <input type="email" placeholder="Email..." id="email_field" required/>
+    <input type="name" placeholder="Name" id="name_field" required/>
+    <input type="surname" placeholder="Surname" id="surname_field"/>
+    <input type="country" placeholder="Country" id="country"/>
+    <input type="City-Village" placeholder="City/ Village" id="City_village" required/>
+    <input type="number" placeholder="Phone number" id="phone number" required/>
+    <input type="ID_no" placeholder="ID (Omang) number" id="id" required/>
+    <input type="text" placeholder="Password..." id="password_test" required/>
+    <input type="password" placeholder="Confirm Password..." id="password_field" required/>
+    <input type="checkbox" placeholder="I accept terms and condition"/>
     
+
+    <button  onclick="logout()">Login to Account</button>
+    <br>
+    <button onclick="login()">Create new account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Mobile Fly. You have successfully Registered an account!.</p>
+    <button>Living room</button>
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyA6XmqP76EBAG1XHZhtbJn6lDDagYH14xI",
+      authDomain: "aqueous-encoder-301807.firebaseapp.com",
+      databaseURL: "https://aqueous-encoder-301807-default-rtdb.firebaseio.com",
+      projectId: "aqueous-encoder-301807",
+      storageBucket: "aqueous-encoder-301807.appspot.com",
+      messagingSenderId: "1012545270359"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="index.js"></script>
+
 </body>
 </html>
