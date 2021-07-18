@@ -2,7 +2,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "firebase": "^8.7.1",
-    "firebaseui": "^4.8.1"
+    "firebaseui": "^4.8.1",
+    "googleapis": "^82.0.0"
   },
   "name": "sky",
   "version": "1.0.0",
