@@ -12,6 +12,10 @@ body{
 	font-family:'Lato', sans-serif;
 	overflow-x:hidden;
 }
+.partnerships {
+	height: 100px;
+  	width: 200px;
+}
 .section-header > p,
 .font-alt{
 	font-family:'Playfair Display', serif;
