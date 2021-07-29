@@ -10,4 +10,5 @@ var IoT gateway = exports module alert
 .push-alert {
     Console.log("message")
     print Console
+    display ("message")
 }
