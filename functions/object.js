@@ -10,7 +10,8 @@ var IoT gateway = exports module alert
 
 import "user data.json"
 set.display.name {
-    
+    name = user name
+    user name = name
 }
 .push-alert {
     Console.log("message")
