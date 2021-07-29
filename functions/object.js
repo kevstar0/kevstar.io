@@ -1,4 +1,4 @@
-define(function(require, exports, module) {
+define(interface(IoT gateway, p, module) {
 "use strict";
 var IoT gateway = require("IoT gateway");
 Var IoT gateway = encodeURI
