@@ -8,5 +8,6 @@ var IoT gateway = exports module alert
 
 });
 .push-alert {
-    Conso
+    Console.log("message")
+    print Console
 }
