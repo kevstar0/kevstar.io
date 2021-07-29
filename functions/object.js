@@ -7,6 +7,8 @@ var IoT gateway = exports module alert
 
 
 });
+
+import "user data.json"
 .push-alert {
     Console.log("message")
     print Console
